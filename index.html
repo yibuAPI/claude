@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude AI模型接口 | 一步API高效中转平台 | 低延迟稳定AI服务</title>
+  
+  <meta name="description" content="一步API提供Claude系列先进AI模型API接口，支持高并发与低延迟，帮助开发者和企业轻松整合智能AI能力，实现快速升级。立即申请Claude API密钥，享受优质AI体验。" />
+  
+  <meta name="keywords" content="Claude, AI模型, AI接口, 一步API, AI中转站, 智能对话, 高并发API, 低延迟API, AI开发平台" />
+  
+  <meta name="author" content="一步API中转站" />
+  
+  <style>
+    body {
+      margin: 0;
+      background-color: #0e2a47;
+      color: #d7e6f4;
+      font-family: "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+    }
+    header {
+      background-color: #1a4876;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 700;
+      color: #f0f9ff;
+    }
+    header p {
+      margin: 12px 0 0;
+      font-size: 19px;
+      color: #b1c9e7;
+    }
+    .btn-primary {
+      display: inline-block;
+      margin-top: 28px;
+      background-color: #6197d1;
+      color: #0e2a47;
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(97,151,209,0.6);
+    }
+    .btn-primary:hover {
+      background-color: #497bb0;
+      box-shadow: 0 6px 14px rgba(73,123,176,0.7);
+      color: #e7f0ff;
+    }
+    .container {
+      max-width: 980px;
+      margin: 48px auto 56px;
+      padding: 0 24px;
+    }
+    h2 {
+      border-left: 6px solid #6197d1;
+      padding-left: 14px;
+      margin-bottom: 24px;
+      font-size: 27px;
+      color: #a3c2e8;
+    }
+    section p {
+      font-size: 17px;
+      margin-bottom: 24px;
+      color: #d7e6f4;
+    }
+    section a {
+      color: #88b1e6;
+      text-decoration: none;
+    }
+    section a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      color: #aec7eb;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 12px 0;
+      padding-left: 24px;
+      position: relative;
+      font-weight: 500;
+    }
+    ul li:before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #6197d1;
+      font-weight: 700;
+    }
+    pre {
+      background: #1b3a66;
+      padding: 18px;
+      border-radius: 8px;
+      overflow-x: auto;
+      color: #b6dbff;
+      font-size: 15px;
+      line-height: 1.5;
+      user-select: text;
+      box-shadow: inset 0 0 8px rgba(97,151,209,0.75);
+    }
+    footer {
+      text-align: center;
+      padding: 28px 12px;
+      color: #7a8ca8;
+      font-size: 14px;
+      border-top: 1px solid #24508a;
+      margin-top: 80px;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Claude AI模型 — 领先智能对话专家</h1>
+  <p>专业AI中转接口服务，为开发者和企业加速智能化转型</p>
+  <a href="https://yibuapi.com" class="btn-primary" target="_blank" rel="noopener">立刻申请Claude API密钥</a>
+</header>
+
+<div class="container">
+  <section>
+    <h2>关于Claude模型</h2>
+    <p>Claude是由顶尖团队打造的智能语言模型，擅长自然语言理解和生成，支持复杂问答、内容创作以及多轮对话，广泛应用于客服、智能助手、内容生产等领域。</p>
+    <p>依托先进技术与丰富训练数据，Claude为AI应用构建了坚实基础，帮助产品快速提升智能交互体验，降低开发门槛。</p>
+  </section>
+
+  <section>
+    <h2>为何选择一步API的Claude服务？</h2>
+    <ul>
+      <li>强大并发能力：支持海量请求，满足企业级应用需求</li>
+      <li>官方接口兼容：无需修改代码，轻松集成已有系统</li>
+      <li>快速响应时效：保障交互延迟极低，提升使用体验</li>
+      <li>灵活结算方案：支持按需计费，适应不同规模业务</li>
+      <li>全天候专业支持：7×24小时技术服务，问题及时解决</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>快速上手指南</h2>
+    <p>访问 <a href="https://yibuapi.com" target="_blank" rel="noopener">一步API官网</a>，注册账户并完成登录流程。</p>
+    <p>在控制台中创建专属的Claude API密钥，即刻开启您的AI智能之旅。</p>
+    <p>利用简单的API调用接口，快速整合Claude强大能力，为您的应用注入智能交互功能。</p>
+  </section>
+
+  <section>
+    <h2>示例代码（Node.js）</h2>
+    <pre><code>const { Configuration, OpenAIApi } = require("openai");
+
+const configuration = new Configuration({
+  apiKey: "您的API密钥",
+  basePath: "https://yibuapi.com/v1",
+});
+
+const openai = new OpenAIApi(configuration);
+
+async function runClaude() {
+  const response = await openai.createChatCompletion({
+    model: "claude-2",
+    messages: [
+      { role: "system", content: "你是一个专业且温暖的AI助手。" },
+      { role: "user", content: "请帮我介绍一下Claude模型的优势。" },
+    ],
+  });
+  console.log(response.data.choices[0].message.content);
+}
+
+runClaude();
+</code></pre>
+  </section>
+
+  <section>
+    <h2>常见疑问详解</h2>
+    <p><strong>1. 一步API的Claude服务安全吗？</strong><br />
+      我们采用工业级加密措施，保障数据传输安全，严格保护用户隐私，获得众多企业客户的信赖。</p>
+    <p><strong>2. 如何获取Claude API密钥？</strong><br />
+      只需注册并登录一步API，轻松创建Claude专属API密钥，无需繁琐审批。</p>
+    <p><strong>3. 计费方式是怎样的？</strong><br />
+      支持灵活多样的计费方案，既有预付费也支持按使用量计费，满足不同业务需求。</p>
+    <p><strong>4. 是否支持高并发请求？</strong><br />
+      依托分布式架构与智能负载均衡技术，能够支持每秒数千次的调用请求。</p>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 一步API中转站 版权所有
+</footer>
+
+</body>
+</html>
